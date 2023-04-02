@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM openjdk:17 AS build
+FROM openjdk:17-jdk-slim AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
