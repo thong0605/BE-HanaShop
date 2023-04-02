@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM openjdk:17-jdk-slim AS build
+FROM 3.9.0-eclipse-temurin-17-focal AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
